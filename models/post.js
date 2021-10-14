@@ -5,11 +5,15 @@ const PostSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    best_time: {
+        type: String,
+        required: true
+    },
     avg_time: {
         type: String,
         required: true
     },
-    best_time: {
+    worst_time: {
         type: String,
         required: true
     }

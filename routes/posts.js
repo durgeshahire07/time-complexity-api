@@ -18,8 +18,9 @@ router.get('/all', async (req,res)=>{
 router.post('/', async (req,res)=>{
    const post = new time_complexity({
        title: req.body.title,
+       best_time: req.body.best_time,
        avg_time: req.body.avg_time,
-       best_time: req.body.best_time
+       worst_time: req.body.worst_time
    });
    try {
         const savedPost = await post.save()
